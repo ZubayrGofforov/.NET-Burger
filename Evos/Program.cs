@@ -120,8 +120,8 @@ class Program
         foreach (var index in indexs)
         {
             Console.ForegroundColor = ConsoleColor.Magenta;
-            Console.WriteLine(foods[index-1].Name + " " + foods[index-1].Price);
+            Console.WriteLine(foods[index - 1].Name + " " + foods[index - 1].Price);
             Console.ForegroundColor = ConsoleColor.White;
         }
     }
- }
+}
