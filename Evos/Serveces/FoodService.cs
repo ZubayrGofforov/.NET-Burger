@@ -7,6 +7,7 @@ namespace Evos.Serveces
     {
         private List<Food> Foods { get; set; } = MockDatas.Data.Foods;
 
+        // Add Food
         public bool AddFood(Food food)
         {
             Food newFood = new Food();
@@ -23,6 +24,7 @@ namespace Evos.Serveces
             return true;
         }
 
+        // Delete Food
         public bool DeleteFood(string foodName)
         {
             Food existFood = new Food();
@@ -39,11 +41,13 @@ namespace Evos.Serveces
             return false;
         }
 
+        // Get All
         public List<Food> GetAllFoods()
         {
             return Foods;
         }
 
+        // Get Food
         public Food GetFood(string foodName)
         {
             foreach (Food food in Foods)
