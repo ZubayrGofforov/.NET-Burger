@@ -9,6 +9,5 @@
         public decimal Price { get; set; }
 
         public string CustomerName { get; set; }
-
     }
 }

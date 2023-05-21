@@ -11,7 +11,6 @@ class Program
         OutputHelper.WelcomeTo();
         IProductManager foodService = new FoodService();
 
-
         bool isExit = true;
         while (isExit)
         {
@@ -19,7 +18,7 @@ class Program
             int choise = int.Parse(Console.ReadLine());
             switch (choise)
             {
-                #region order
+                #region order1
                 case 1:
                     Console.Clear();
                     Console.WriteLine(" ========MENU=======");
@@ -39,7 +38,7 @@ class Program
                     break;
                 #endregion
 
-                #region order
+                #region order2
                 case 2:
                     Console.Write("Taom nomini kiriting: ");
                     string foodName = Console.ReadLine();
@@ -80,6 +79,7 @@ class Program
                     break;
                 #endregion
 
+                #region order3
                 case 3:
                     Console.Write("O'chirmoqchi bo'lgan taom nomini kiriting: ");
                     string deleteFood = Console.ReadLine();
@@ -88,8 +88,13 @@ class Program
                     if (result) Console.WriteLine("Taom ochirildi!");
                     else Console.WriteLine("Bunday taom mavjud emas!");
                     break;
+                #endregion
+
+                #region order4
                 case 4:
                     return;
+
+                #endregion
 
                 default: isExit = false; break;
             }
