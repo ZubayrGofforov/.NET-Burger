@@ -11,5 +11,4 @@ public interface IProductManager
     public Food GetFood(string foodName);
 
     public List<Food> GetAllFoods();
-
 }
